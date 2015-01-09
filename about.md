@@ -14,10 +14,10 @@ Do check out my personal website, [mcissel.net](mcissel.net)
 
 I've got experience in the following
 <ul>
-Languages: PHP, JavaScript, JAVA, ANSI C, C#, JSP, MATLAB, Python
-Libraries: jQuery, jqPlot, Androidplot
-Frameworks: CakePHP, Velocity, Freemarker, JSTL
-Platforms/APIs: Android, Node.js
+<li>Languages: PHP, JavaScript, JAVA, ANSI C, C#, JSP, MATLAB, Python</li>
+<li>Libraries: jQuery, jqPlot, Androidplot</li>
+<li>Frameworks: CakePHP, Velocity, Freemarker, JSTL</li>
+<li>Platforms/APIs: Android, Node.js</li>
 <li>CMSs: Wordpress, Drupal, Liferay, Expression Engine</li>
 </ul>
 
