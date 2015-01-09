@@ -4,11 +4,11 @@ title: About
 permalink: /about/
 ---
 
-I'm a programmer currently seeking employment or even part time work. I've been programming for the web since Firefox was named Netscape. 
+I'm a programmer currently seeking employment or even part time work.
 
-Lately, I've been learning about and experimenting with other languages and frameworks like CakePHP, Node.js, and Ruby on Rails. I've also made a chrome extension, which you can see here [https://github.com/mcissel/checkall-chrome-ext] (https://github.com/mcissel/checkall-chrome-ext)
+I've been programming for the web since Firefox was named Netscape. Lately, I've been learning about and experimenting with other languages and frameworks like CakePHP, Node.js, and Ruby on Rails. I've also made a chrome extension, which you can see here [https://github.com/mcissel/checkall-chrome-ext](https://github.com/mcissel/checkall-chrome-ext)
 
-[https://github.com/mcissel/checkall-chrome-ext](https://github.com/mcissel/checkall-chrome-ext)
+Do check out my personal website, [mcissel.net](mcissel.net)
 
 ### More Information
 
