@@ -13,11 +13,13 @@ Do check out my personal website, [mcissel.net](mcissel.net)
 ### More Information
 
 I've got experience in the following
+<ul>
 Languages: PHP, JavaScript, JAVA, ANSI C, C#, JSP, MATLAB, Python
 Libraries: jQuery, jqPlot, Androidplot
 Frameworks: CakePHP, Velocity, Freemarker, JSTL
 Platforms/APIs: Android, Node.js
-CMSs: Wordpress, Drupal, Liferay, Expression Engine
+<li>CMSs: Wordpress, Drupal, Liferay, Expression Engine</li>
+</ul>
 
 ### Contact me
 
