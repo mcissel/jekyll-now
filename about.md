@@ -14,11 +14,11 @@ Do check out my personal website, [mcissel.net](mcissel.net)
 
 I've got experience in the following
 <ul>
-<li>Languages: PHP, JavaScript, JAVA, ANSI C, C#, JSP, MATLAB, Python</li>
-<li>Libraries: jQuery, jqPlot, Androidplot</li>
-<li>Frameworks: CakePHP, Velocity, Freemarker, JSTL</li>
-<li>Platforms/APIs: Android, Node.js</li>
-<li>CMSs: Wordpress, Drupal, Liferay, Expression Engine</li>
+<li><em>Languages:</em> PHP, JavaScript, JAVA, ANSI C, C#, JSP, MATLAB, Python</li>
+<li><em>Libraries:</em> jQuery, jqPlot, Androidplot</li>
+<li><em>Frameworks:</em> CakePHP, Velocity, Freemarker, JSTL</li>
+<li><em>Platforms/APIs:</em> Android, Node.js</li>
+<li><em>CMSs:</em> Wordpress, Drupal, Liferay, Expression Engine</li>
 </ul>
 
 ### Contact me
