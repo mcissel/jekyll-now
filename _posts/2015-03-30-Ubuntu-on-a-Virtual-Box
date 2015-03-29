@@ -1,3 +1,7 @@
+---
+layout: post
+title: Ubuntu on a Virtual Box
+---
 I was using Ubuntu for a while and I like it, but it wasn't quite the Windows 7 that I'd gotten used to. Now I went and upgraded to Windows 8.1 and I like that too, BELIEVE IT! The tiles are pretty cool. I didn't find myself joing the whine wagon and complain about not being able to adapt.
 
 I had to get Visual Studio for a new job, hence the need for Windows. Then, I wanted to use my favorite new web framework, Meteor, and Meteor doesn't play nice with Windows for making mobile apps, hence the need for Ubuntu. So I'm setting up Ubuntu 14.04.2 LTS as a "guest OS" virtual machine in Virtual Box 4.3.26 running on Windows 8.1, the "host OS".
