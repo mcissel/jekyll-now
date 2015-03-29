@@ -1,0 +1,15 @@
+I was using Ubuntu for a while and I like it, but it wasn't quite the Windows 7 that I'd gotten used to. Now I went and upgraded to Windows 8.1 and I like that too, BELIEVE IT! The tiles are pretty cool. Fuck what ya heard about it being a pain in the ass. It's just an optional awesomeness. But I digress.
+
+So I had to get Visual Studio for a new job, hence the need for Windows. Then, I wanted to use Meteor again, and Meteor doesn't yet play nice with Windows for making mobile apps, hence the need for Ubunut. My favorite.
+
+1. Download [Virtual Box](https://www.virtualbox.org/wiki/Downloads)
+1. Download the [Virtual Box Extension Pack](https://www.virtualbox.org/wiki/Downloads)
+1. Download the correct [Ubuntu iso](http://www.ubuntu.com/download/desktop) for your system.
+1. Start Virtual Box, and add a new VM, set it to Ubuntu (32 or 64, whatever you downloaded).
+1. In Settings > Storage, add the iso you downloaded
+  * Click the CD with the plus symbol (CD+)
+  * Click "Choose Disk" and find the iso on your computer
+1. In Settings > Network, change to bridged (allows webapps on guest be viewed on host's browsers!)
+1. Run the vm
+1. Install Ubuntu as you would normally
+1. You need to add "Guest Editions 
