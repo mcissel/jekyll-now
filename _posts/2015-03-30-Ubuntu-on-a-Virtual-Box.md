@@ -16,10 +16,10 @@ I had to get Visual Studio for a new job, hence the need for Windows. Then, I wa
 1. Run the vm
 1. Install Ubuntu as you would normally
 1. You need to add "Guest Additions" on your Ubuntu guest OS to get bigger resolutions, mouse integration, etc.
-  * I was installing Ubuntu 14.04.2 LTS, for this OS you need to:
-  * open a terminal (<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>t</kbd>)
-  * run `sudo apt-get update`
-  * run `sudo apt-get install virtualbox-guest-additions-iso`
+  * I was installing Ubuntu 14.04.2 LTS, and I had some trouble with this. First:
+  * I opened a terminal (<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>t</kbd>)
+  * <code>sudo apt-get update
+  * run sudo apt-get install virtualbox-guest-additions-iso</code>
   * Then, in the Virtual Box menu bar, click Devices > Insert guest additions CD image, and install the Guest Additions
 1. Turn off the VM and go into its settings in the Virtual Box Manager and make sure you have the following settings:
   * Settings > System > Acceleration: make sure that "Enable VT-x/AMD-V" and "Enable Nested Paging" are both checked
