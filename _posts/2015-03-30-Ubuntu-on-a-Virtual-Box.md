@@ -17,8 +17,8 @@ I had to get Visual Studio for a new job, hence the need for Windows. Then, I wa
 1. Install Ubuntu as you would normally
 1. You need to add "Guest Additions" on your Ubuntu guest OS to get bigger resolutions, mouse integration, etc.
   * I was installing Ubuntu 14.04.2 LTS, for this OS you need to:
-  * open a terminal (<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>v</kbd>)
-  * run `sudo apt-get install build-essential linux-headers-$(uname -r)` to install the required build dependencies
+  * open a terminal (<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>t</kbd>)
+  * run `sudo apt-get install build-essential linux-headers-$(uname -r)`
   * run `sudo apt-get install virtualbox-guest-x11`
   * mount and run the cd iso that is created
 1. Turn off the VM and go into its settings in the Virtual Box Manager and make sure you have the following settings:
