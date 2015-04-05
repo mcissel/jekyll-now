@@ -17,10 +17,20 @@ I had to get Visual Studio for a new job, hence the need for Windows. Then, I wa
 1. Install Ubuntu as you would normally
 1. You need to add "Guest Additions" on your Ubuntu guest OS to get bigger resolutions, mouse integration, etc.
   * I was installing Ubuntu 14.04.2 LTS, and I had some trouble with this. First:
-  * I opened a terminal (<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>t</kbd>)
-  * <code>sudo apt-get update
-  run sudo apt-get install virtualbox-guest-additions-iso</code>
-  * Then, in the Virtual Box menu bar, click Devices > Insert guest additions CD image, and install the Guest Additions
+  * I opened a terminal (<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>t</kbd>) and ran:
+  * <pre><code>sudo apt-get update
+  sudo apt-get install virtualbox-guest-additions-iso</code></pre>
+  * Then, in the Virtual Box menu bar, click Devices > Insert guest additions CD image, and install the Guest Additions. That didn't work though!!! So I got rid of that Guest Additions mess by running:
+  * <pre><code>sudo apt-get purge VBox*
+sudo apt-get purge vbox*</code></pre>
+  * And then tried to install the correct version, from the Ubuntu repositories (versions retrieved from here are tested and maintained by the folks at Ubuntu):
+  * <pre><code>sudo apt-get install build-essential linux-headers-$(uname -r)
+  sudo apt-get install virtualbox-guest-x11</code></pre>
+  * But the "virtualbox-guest-x11" package wouldn't install, due to unmet dependencies!!!! So what I did was:
+  * <pre><code>sudo apt-get remove libcheese-gtk23
+  sudo apt-get install xserver-xorg-core</code></pre>
+  * (Credits to the askubuntu forums [here](http://askubuntu.com/questions/588943/experiencing-small-resolution-issue-in-ubuntu-14-04-2-with-virtualbox-getting-s/#answer-604824))
+  * I then restarted the Virtual Machine and it worked! (well it gave me a Ubuntu error twice, but then... it worked!)
 1. Turn off the VM and go into its settings in the Virtual Box Manager and make sure you have the following settings:
   * Settings > System > Acceleration: make sure that "Enable VT-x/AMD-V" and "Enable Nested Paging" are both checked
     * for "VT-x/AMD-V" you may have to go into your computer's BIOS and enable those virtualization options.
