@@ -2,9 +2,9 @@
 layout: post
 title: Ubuntu on a Virtual Box
 ---
-I was using Ubuntu for a while and I like it, but it wasn't quite the Windows 7 that I'd gotten used to. Now I went and upgraded to Windows 8.1 and I like that too, BELIEVE IT! The tiles are pretty cool. I didn't find myself joing the whine wagon and complain about not being able to adapt.
+I was using Ubuntu for a while and I liked it, but it didn'd do things the Windows 7 did. I had gotten too accustomed to all the shorcuts in Windows 7, and to the tools like Ditto and Instant Eyedropper that just aren't quite the same in Linux. Now I've procured a new laptop and find myself upgraded to Windows 8.1 The tiles are pretty cool. I didn't find myself joing the whine wagon and complain about Windows 8.
 
-I had to get Visual Studio for a new job, hence the need for Windows. Then, I wanted to use my favorite new web framework, Meteor, and Meteor doesn't play nice with Windows for making mobile apps, hence the need for Ubuntu. So I'm setting up Ubuntu 14.04.2 LTS as a "guest OS" virtual machine in Virtual Box 4.3.26 running on Windows 8.1, the "host OS".
+I had to get Visual Studio for a new job, hence the need for Windows. But I also want to use my favorite new web framework, Meteor.js, and Meteor doesn't play nice with Windows for making mobile apps, hence the need for Ubuntu. So I'm setting up Ubuntu 14.04.2 LTS as a "guest OS" virtual machine in Virtual Box 4.3.26 running on Windows 8.1, the "host OS". I ran into some problems installing the Guest Additions, so I've documented the correct way to do it below. Make sure to make a snapshot of your virtual machine before attempting that step, in case it doesn't work for you.
 
 1. Download [Virtual Box](https://www.virtualbox.org/wiki/Downloads)
 1. Download the [Virtual Box Extension Pack](https://www.virtualbox.org/wiki/Downloads)
@@ -15,26 +15,20 @@ I had to get Visual Studio for a new job, hence the need for Windows. Then, I wa
   * Click "Choose Disk" and find the iso on your computer
 1. Run the vm
 1. Install Ubuntu as you would normally
+1. Make a snapshot of your virtual machine at this point. It'll save time if the Guest Additions don't get installed correctly, or if you simply want to revert to a fresh install of Ubuntu.
 1. You need to add "Guest Additions" on your Ubuntu guest OS to get bigger resolutions, mouse integration, etc.
-  * I was installing Ubuntu 14.04.2 LTS, and I had some trouble with this. First:
+  * I was installing Ubuntu 14.04.2 LTS on Virtual Box 4.3.26 r98988, and I had to follow these steps exactly:
   * I opened a terminal (<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>t</kbd>) and ran:
-<pre><code>sudo apt-get update
-sudo apt-get install virtualbox-guest-additions-iso</code></pre>
-  * Then, in the Virtual Box menu bar, click Devices > Insert guest additions CD image, and install the Guest Additions. That didn't work though!!! So I got rid of that Guest Additions mess by running:
-<pre><code>sudo apt-get purge VBox*
-sudo apt-get purge vbox*</code></pre>
-  * And then tried to install the correct version, from the Ubuntu repositories (versions retrieved from here are tested and maintained by the folks at Ubuntu):
-<pre><code>sudo apt-get install build-essential linux-headers-$(uname -r)
-sudo apt-get install virtualbox-guest-x11</code></pre>
-  * But the "virtualbox-guest-x11" package wouldn't install, due to unmet dependencies!!!! So what I did was (Credits to the askubuntu forums [here](http://askubuntu.com/questions/588943/experiencing-small-resolution-issue-in-ubuntu-14-04-2-with-virtualbox-getting-s/#answer-604824)):
-<pre><code>sudo apt-get remove libcheese-gtk23
-sudo apt-get install xserver-xorg-core
-sudo apt-get install virtualbox-guest-x11</code></pre>
-  * I then restarted the Virtual Machine and it worked! (well it gave me a Ubuntu error twice, but then... it worked!)
-1. Turn off the VM and go into its settings in the Virtual Box Manager and make sure you have the following settings:
+<pre><code>sudo apt-get install build-essential
+sudo apt-get install linux-headers-generic
+sudo apt-get install dkms</code></pre>
+  * Do not restart the guest os or the virtual machine.
+  * In the Virtual Box menu bar, click Devices > Insert guest additions CD image, and install the Guest Additions.
+  * Then shut down the guest OS, from within the Guest OS. (you should have the Guest Additions successfully installed at this point)
+1. With the VM off, go into its settings in the Virtual Box Manager and make sure you have the following settings:
   * Settings > System > Acceleration: make sure that "Enable VT-x/AMD-V" and "Enable Nested Paging" are both checked
     * for "VT-x/AMD-V" you may have to go into your computer's BIOS and enable those virtualization options.
-  * Settings > Display > Video: make sure that "Enable 3D Acceleration" is checked
+  * Settings > Display > Video: make sure that "Enable 3D Acceleration" is checked and slide the video memory to a good amount
   * Settings > Network, change the attached network from NAT to Bridged (allows webapps on guest be viewed on host's browsers!)
   * While you're in Settings > System, give it an appropriate amount of memory and give it access to 2 processor cores
 1. Fire up the Ubuntu VM again, you're ready to rock.
