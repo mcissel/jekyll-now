@@ -4,17 +4,15 @@ title: About
 permalink: /about/
 ---
 
-I've been programming for the web since Firefox was named Netscape. Lately, I've been learning about and experimenting with other languages and frameworks, namely Meteor.js. I've also made a chrome extension, which you can see here [https://github.com/mcissel/checkall-chrome-ext](https://github.com/mcissel/checkall-chrome-ext)
-
-Do check out my personal website, [mcissel.net](mcissel.net)
+I've been programming for the web since Firefox was Netscape. I have another website, [mcissel.net](mcissel.net).
 
 ### More Information
 
 I've got experience in the following
 <ul>
-<li><em>Languages:</em> PHP, JavaScript, JAVA, ANSI C, C#, JSP, MATLAB, Python</li>
-<li><em>Libraries:</em> jQuery, jqPlot, Androidplot</li>
-<li><em>Frameworks:</em> Meteor, Velocity, Freemarker, JSTL</li>
+<li><em>Languages:</em> JavaScript, JAVA, PHP, ANSI C, C#, MATLAB, Python</li>
+<li><em>Libraries:</em> Underscore, jQuery, jqPlot, Androidplot</li>
+<li><em>Frameworks:</em> Meteor, Velocity, Freemarker, JSP/JSTL</li>
 <li><em>Platforms/APIs:</em> Android, Node.js</li>
 <li><em>CMSs:</em> Wordpress, Drupal, Liferay, Expression Engine</li>
 </ul>
